@@ -13,8 +13,9 @@ public class MyListTest {
         System.out.println("element 1: "+listInteger.get(1));
         System.out.println("element 2: "+listInteger.get(2));
         System.out.println("element 3: "+listInteger.get(3));
+        System.out.println(listInteger.getSize());
 
-        listInteger.get(-1);
-        System.out.println("element -1: " + listInteger.get(-1));
+//        listInteger.get(-1);
+//        System.out.println("element -1: " + listInteger.get(-1));
     }
 }
