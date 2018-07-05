@@ -9,10 +9,18 @@ public class MyListTest {
         list.add(9);
         list.add(7);
         list.add(20);
+        list.add(20);
+        list.add(20);
+        list.add(20);
+        list.add(20);
+        list.add(20);
+        list.add(20);
         list.add(15);
         for (int i = 0; i < list.getSize(); i++) {
             list.getlist(i);
         }
+        list.remove(4);
+        list.remove(4);
         list.remove(4);
         System.out.println("-----------------------------");
         for (int i = 0; i < list.getSize(); i++) {

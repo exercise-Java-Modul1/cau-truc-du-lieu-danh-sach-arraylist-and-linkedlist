@@ -1,5 +1,7 @@
 package trienKhaiCacPhuongThucCuaArrayList;
 
+import java.util.Arrays;
+
 public class MyList<E> {
     private int size = 0;
     private static final int DEFAULT_CAPACITY = 10;
@@ -11,6 +13,9 @@ public class MyList<E> {
 
 
     public void add( E element) {
+        if (size == elements.length) {
+            ensureCapa();
+        }
         elements[size] = element;
         size++;
     }
@@ -25,6 +30,11 @@ public class MyList<E> {
                 System.out.println(elements[i]);
             }
         }
+    }
+
+    private void ensureCapa() {
+        int newSize = elements.length * 2;
+        elements = Arrays.copyOf(elements, newSize);
     }
 
     public void remove(int index) {
